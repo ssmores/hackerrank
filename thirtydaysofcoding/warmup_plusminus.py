@@ -42,7 +42,7 @@ The respective fractions of positive numbers, negative numbers and zeroes are 3/
 Featured solutions
 Python 2
 
-
+no answer given. discussion included list comprehension functions...
 
 **************
 """
