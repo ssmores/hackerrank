@@ -54,7 +54,10 @@ Featured solutions
 Python 2
 
 
-
+n, k, q = map(int, raw_input().split())
+arr = map(int, raw_input().split())
+for _ in range(q):
+    print arr[(input() + n - k) % n]
 
 **************
 """
