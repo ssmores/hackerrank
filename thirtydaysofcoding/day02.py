@@ -61,6 +61,6 @@ taxPercent = float(raw_input().strip())/100
 
 tip = mealCost * tipPercent
 tax = mealCost * taxPercent
-totalCost = int(mealCost + tip + tax)
+totalCost = int(round(mealCost + tip + tax))
 
-print 'the total meal cost is %s dollars.' % totalCost
+print 'The total meal cost is %s dollars.' % totalCost
