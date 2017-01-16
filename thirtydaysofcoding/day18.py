@@ -48,15 +48,30 @@ import sys
 class Solution(object):
     #Write your code here
     def __init__(self):
-        self._list = []
+        self.stack = []
+        self.queue = []
 
 
     def enqueueCharacter(self, data):
         """Adds item to end of queue."""
-        return self._list.append(data)
+        
+        self.queue.append(data)
 
 
-    def pushCharacter(self):
+    def pushCharacter(self, data):
+        """Pushes character onto top of stack."""
+
+        self.stack.append(data)
+
+    def popCharacter(self):
+        """Pops and returns character at top of stack."""
+
+        return self.stack.pop()
+
+    def dequeueCharacter(self):
+        """Dequeues and returns first item in queue."""
+
+        return self.queue.pop(0)
 
 
 
