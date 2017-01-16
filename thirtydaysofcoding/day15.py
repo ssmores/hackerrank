@@ -82,23 +82,16 @@ class Solution:
     #This is where I can provide additional coding information.
 
     def insert(self,head,data):
-        # Complete this method
-        # current = head
-        # while current and current.next:
-        #     current = current.next
-        # if current is None:
-        #     current = Node(data)
-        # else:
-        #     current.next = Node(data)
+        """Takes head and data as parameters, returns head of linked list."""
 
         if head is None:
             self.head = Node(data)
-            head = self.head
         else:
-
             while current.next is not None:
                 current = current.next
             current.next = Node(data)
+
+        return self.head
 
 
 
